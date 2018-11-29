@@ -9,7 +9,7 @@ class SimulationService {
 
   def printStats(runner: Runner): String = s"Name :${runner.name},  H,W,S = [${runner.height}, ${runner.weight}, ${runner.stamina}]  LL:${runner.legLength} Single step is :${runner.calcStep} and Hundred steps is :${runner.calcHundredSteps} \n"
 
-  def printStatsBMI(runner: Runner): String = s"H,W = [${runner.height}, ${runner.weight}], SS:${runner.calcStep}, HS:${runner.calcHundredSteps}, BMI:${runner.BMIRating} ${runner.calcBMI} \n"
+  def printStatsBMI(runner: Runner): String = s"H,W = [${runner.height}, ${runner.weight}], SS:${runner.calcStep}, HS:${runner.calcHundredSteps}, BMI:${runner.getBMIRating} ${runner.calcBMI} \n"
 
   def orderRunnersByStep(runningList : Seq[Runner]): Seq[Runner] = runningList.sortBy(runner => runner.calcHundredSteps)
 
