@@ -1,0 +1,2 @@
+# RunningManGA
+Practising Genetic Algorithms
